@@ -9,3 +9,15 @@
     color: #fff;
 }
 
+.navbar {
+    background-color: #1c49c2;
+}
+
+.searchbar {
+    height: 3rem;
+}
+
+.form-control {
+    font-size: 18px;
+}
+
