@@ -20,8 +20,8 @@
       <a class="navbar-brand my-2 mx-3 pe-4" href="#">
           <img src="https://seeklogo.com/images/C/chewy-inc-logo-8CF7FFC578-seeklogo.com.png" alt="" class=" chewylogo">
       </a>
-      <form class="col-lg-6 col-md-5 col-sm-12 col-xs-12 d-flex">
-        <input class="form-control me-2 py-2" type="search"  placeholder="Search" aria-label="Search">
+      <form class="col-sm-6">
+        <input class="form-control me-2 py-2 col-sm-12" type="search"  placeholder="Search" aria-label="Search">
       </form>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="d-flex flex-end">
@@ -108,7 +108,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="d-flex flex-end">
             <div class="dropdown">
-              <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
+              <ul class="navbar-nav ms-2 mb-2 pe-2 mb-lg-0">
                   <a class="nav-link dropdown-toggle text-white fw-bold fs-5 mt-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     shop
                   </a>
@@ -162,7 +162,7 @@
                   </div>
               </ul>
           </div>
-          <div class="px-5">
+          <div class="px-4">
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <a class="nav-link text-white ms-3 mt-2 fs-5" href="#" id="navbarDropdown" role="button"  aria-expanded="false">
                   chewy picks
@@ -176,17 +176,22 @@
                 </div>
             </ul>
         </div>
-        <div class="px-2">
-          <ul class="navbar-nav  mb-2 mb-lg-0">
-              <a class="nav-link text-white ms-3 mt-2 fs-5" href="#" id="navbarDropdown" role="button"  aria-expanded="false">
+        <div class="dropdown">
+          <ul class="navbar-nav px-4 mb-2 mb-lg-0">
+              <a class="nav-link dropdown-toggle text-white fs-5 mt-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 give back
               </a>
               <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                  <p class="fw-bold dropdown-item">Your cart is empty.</p>
-                  <p class="fs-5 dropdown-item my-0">Something missing? <a href="">Sign in</a> to see</p>
-                  <p class="fs-5 dropdown-item my-0">items you may have added from</p>
-                  <p class="fs-5 dropdown-item">another computer or device.</p>
-                        
+                  <div class="d-flex flex-fill ms-1">
+                      <button type="button" class="btn btn-lg px-5 text-white signinbtn">Sign In</button>
+                  </div>
+                  <p class="ps-2 pt-2 pb-0">New Customer?</p>
+                  <p><a href="" class="ps-2 mt-0">Start here</a></p>
+                  <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Account</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Orders</a></li>
+                <li><hr class="dropdown-divider"></li>
               </div>
           </ul>
       </div>
@@ -215,6 +220,91 @@
     </div>
   </div>
 </nav>
+<!--End bottom navbar-->
+
+<!--Start header promo bar-->
+<div class="row d-flex justify-content-center fw-bold py-2">
+  Save 35% on your first
+    <img src="https://www.chewy.com/assets/img/logo/autoship-logo.svg" class="autoshiplogo" alt="">
+      <div class="col-1">
+        <p class="mb-0 learnmorecolor">Learn more</p>
+        <small class=" termsapplyfont ps-3">Terms apply</small>
+      </div>
+</div>
+<!--End header promo bar-->
+
+<!--Start hero carousel-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cms-www.chewy.com/contentAsset/image/87b69788-2b58-4cc2-b9de-335060f46758/fileAsset/byInode/1/filter/Resize,Jpeg/jpeg_q/100/resize_w/1440/resize_h/296/revised-2022-04-Autoship-HP-Hero-LARGE-1440.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cms-www.chewy.com/contentAsset/image/f72e505c-4ce4-4d51-b68a-5291b8cbc781/fileAsset/byInode/1/filter/Resize,Jpeg/jpeg_q/100/resize_w/1440/resize_h/296/2022-03_JFFD-NewAtChewy_HP-Hero-LARGE-1440-new.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cms-www.chewy.com/contentAsset/image/45781a7d-c9c6-4192-9164-d49977b4de83/fileAsset/byInode/1/filter/Resize,Jpeg/jpeg_q/100/resize_w/1440/resize_h/296/2022-03_Parasiticide-Season_MULTIPET_HP-Hero-LARGE-1440.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cms-www.chewy.com/contentAsset/image/e912ea30-0805-49c0-aa3a-2048c4a29f8d/fileAsset/byInode/1/filter/Resize,Jpeg/jpeg_q/100/resize_w/1440/resize_h/296/2022-02_CwaV-HP-Hero-March-DOG-LARGE.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cms-www.chewy.com/contentAsset/image/276e5522-d32b-459b-8375-000fb74e04fa/fileAsset/byInode/1/filter/Resize,Jpeg/jpeg_q/100/resize_w/1440/resize_h/296/2022-Spring-Apparel-HP-Hero-LARGE-1440.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cms-www.chewy.com/contentAsset/image/c1932f7a-3a99-4d9a-b863-7f48abe6eff7/fileAsset/byInode/1/filter/Resize,Jpeg/jpeg_q/100/resize_w/1440/resize_h/296/2022-02-AJ-HPHero-Banner4-LARGE.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--End hero carousel-->
+
+<!--Start contentzone-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-3 bg-secondary bg-opacity-25 py-2 ps-4">
+      <h4 class="mt-2 mb-0">Hi</h4>
+      <p><a href="" class="text-decoration-none">Sign In</a></p>
+    </div>
+    <div class="col-sm-12 col-md-3 bg-light ">
+      <div class="row d-flex  ">
+        <i class="bi bi-arrow-left-right col fs-3 d-inline"></i>
+        <div class="mx-0 d-inline">
+          <h4 class="mt-2 mb-0">Save 35% Today</h4>
+          <p><a href="" class="text-decoration-none">Set Up Autoship</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 bg-light">
+      <div class="row">
+        <i class="bi bi-box-seam col fs-3"></i>
+        <div class="col mx-0">
+          <h4 class="mt-2 mb-0">Recent Order</h4>
+          <p><a href="" class="text-decoration-none">Track Package</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-3 bg-light">
+      <h4 class="mt-2 mb-0">Chewy Pharmacy</h4>
+      <p><a href="" class="text-decoration-none">Shop Now</a></p>
+    </div>
+  </div>
+  </div>
+  
+
+<!--End contentzone-->
 
 
     <!-- JavaScript Bundle with Popper -->
