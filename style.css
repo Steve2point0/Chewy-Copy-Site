@@ -85,3 +85,16 @@
     font-size: 13px;
 }
 
+.fs-14 {
+    font-size: 14px;
+}
+
+.img-200px {
+    width: 200px;
+    height: 200px;
+}
+
+.bg-chewyblue {
+    background-color: #1c49c2;
+}
+
