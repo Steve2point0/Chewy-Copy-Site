@@ -12,7 +12,12 @@
 </head>
 <body>
 <!--Start Top Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar sticky-top navbar-light bg-light" data-bs-toggle="collapse">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Sticky top</a>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light disable-rfs">
     <div class="container-fluid w1440">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -101,8 +106,11 @@
           </div>
       </div>
     </div>
+    
   </nav>
 <!--End Top Navbar-->
+
+<!--Start bottom navbar-->
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid  w1440">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -219,6 +227,37 @@
   </div>
 </nav>
 <!--End bottom navbar-->
+
+<!--Scroll navbar-->
+<div class="collapse navbar-collapse" id="navbarScroll">
+  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Link
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+    </li>
+  </ul>
+  <form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+</div>
+<!--Scroll navbar-->
 
 <!--Start header promo bar-->
 <div class="container w1440">
@@ -504,7 +543,7 @@
 <div class="container-fluid w1440 mb-5">
   <p class="fs-4 fw-bold mt-5">Discover Pet Favorites by Chewy</p>
   <div class="row mx-auto">
-    <div class="card p-3 mx-2" style="width: 15rem;">
+    <div class="card shadow-sm p-3 mx-2" style="width: 15rem;">
       <img src="https://img.chewy.com/is/image/catalog/326420_MAIN._AC_SY150_V1646846701_.jpg" class="card-img-top mx-auto petfavorites" alt="...">
       <div class="card-body">
         <p class="card-title"><span class="fw-bold">Goody Box</span> Springtime Dog Toys, Treats, & Bandana, Medium/Large</p>
@@ -517,7 +556,7 @@
         <span>3</span>
       </div>
     </div>
-    <div class="card p-3 mx-3" style="width: 15rem;">
+    <div class="card shadow-sm p-3 mx-3" style="width: 15rem;">
       <img src="https://img.chewy.com/is/image/catalog/312304_MAIN._AC_SY150_V1644883948_.jpg" class="card-img-top mx-auto petfavorites" alt="...">
       <div class="card-body">
         <p class="card-title"><span class="fw-bold">Frisco</span> Daisy Dog & Cat Bandana, Medium/Large</p>
@@ -530,7 +569,7 @@
         <span>0</span>
       </div>
     </div>
-    <div class="card p-3 mx-2" style="width: 15rem;">
+    <div class="card shadow-sm p-3 mx-2" style="width: 15rem;">
       <img src="https://img.chewy.com/is/image/catalog/86899_MAIN._AC_SY150_V1512484676_.jpg" class="card-img-top mx-auto petfavorites" alt="...">
       <div class="card-body">
         <p class="card-title"><span class="fw-bold">Bones & Chews</span> Made in USA Roasted Marrow Bone 6" Dog Treat</p>
@@ -543,7 +582,7 @@
         <span>3477</span>
       </div>
     </div>
-    <div class="card p-3 mx-3" style="width: 15rem;">
+    <div class="card shadow-sm p-3 mx-3" style="width: 15rem;">
       <img src="https://img.chewy.com/is/image/catalog/326425_MAIN._AC_SY150_V1646846704_.jpg" class="card-img-top mx-auto petfavorites" alt="...">
       <div class="card-body">
         <p class="card-title"><span class="fw-bold">Goody Box</span> Springtime Cat Toys, Treats, & Bandana</p>
@@ -556,7 +595,7 @@
         <span>2</span>
       </div>
     </div>
-    <div class="card p-3 mx-2" style="width: 15rem;">
+    <div class="card shadow-sm p-3 mx-3" style="width: 15rem;">
       <img src="https://img.chewy.com/is/image/catalog/304950_MAIN._AC_SY150_V1642441202_.jpg" class="card-img-top mx-auto petfavorites" alt="...">
       <div class="card-body">
         <p class="card-title"><span class="fw-bold">Frisco</span> Spring Pack Plush Squeaky Dog Toy, 3 count</p>
@@ -744,19 +783,19 @@
 <div class="container-fluid bg-chewyblue">
   <div class="hstack w1440 py-4">
     <div class="fw-bold col-sm-3">
-      <p class="text-white pt-1">Our experts are available 24/7:</p>
+      <p class="text-white ps-5 pt-1">Our experts are available 24/7:</p>
     </div>
-    <div class="fw-bold col-sm-2">
+    <div class="fw-bold col-sm-2 px-4">
       <p class="text-white pt-1"><i class="bi bi-telephone-fill"></i> 1-800-555-4399</p>
     </div>
-    <div class="fw-bold col-sm-2">
+    <div class="fw-bold col-sm-2 px-4">
       <p class="text-white pt-1"><i class="bi bi-cloud-fill"></i> chat now</p>
     </div>
     <div class="fw-bold col-sm-2">
       <p class="text-white pt-1"><i class="bi bi-envelope-fill"></i> message us</p>
     </div>
-    <div class="fw-bold col-sm-3">
-      <div class="btn rounded-pill fw-bold bg-white px-5 chewyblue"><i class="bi bi-chevron-up"></i> back to top</div>
+    <div class="fw-bold col-sm-3 pe-5">
+      <div class="btn rounded-pill fw-bold bg-white px-5 py-2 chewyblue"><i class="bi bi-chevron-up"></i> back to top</div>
     </div>
   </div>
 </div>
@@ -795,10 +834,10 @@
       </ul>
       <ul class="navbar-nav">
         <div class="hstack fs-3">
-          <a href=""><i class="bi bi-facebook fb-color"></i></a>
-          <a href=""><i class="bi bi-youtube text-danger px-2"></i></a>
-          <a href=""><i class="bi bi-instagram pe-2 insta-color"></i></a>
-          <a href=""><i class="bi bi-twitter tw-color"></i></a>
+          <a href=""><i class="bi bi-facebook fb-color fs-1"></i></a>
+          <a href=""><i class="bi bi-youtube text-danger px-2 fs-1"></i></a>
+          <a href=""><i class="bi bi-instagram pe-2 insta-color fs-1"></i></a>
+          <a href=""><i class="bi bi-twitter tw-color fs-1"></i></a>
         </div>
       </ul>
       <ul class="navbar-nav border border-1">
@@ -829,6 +868,17 @@
   </div>
 </div>
 <!--End app store-->
+
+<!--Start hr-->
+<div class="mb-5">
+  <hr>
+</div>
+<!--End hr-->
+
+<!--Start copyright-->
+
+<!--End copyright-->
+
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
