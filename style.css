@@ -78,6 +78,14 @@
 }
 
 
+    @media only screen 
+    and (max-width: 540px) {
+        .chewy-pack {
+            flex-direction: column;
+        }
+    }
+
+ 
 .pack-color {
     background-color: #dbebf9;
 }
